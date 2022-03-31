@@ -17,17 +17,18 @@ public class GPS : MonoBehaviour
         {
             Instance = this;
         }
+        DontDestroyOnLoad(gameObject);
     }
     public void FixedUpdate()
     {
         if(Input.location.isEnabledByUser)
         {
-            myLattitude = Input.location.lastData.latitude;
-            myLongitude = Input.location.lastData.longitude;
+            //myLattitude = Input.location.lastData.latitude;
+            //myLongitude = Input.location.lastData.longitude;
          
         }
-     myLattitudeText.text = myLattitude.ToString();
-     myLongitudeText.text = myLongitude.ToString();
+    // myLattitudeText.text = myLattitude.ToString();
+    // myLongitudeText.text = myLongitude.ToString();
     }
     IEnumerator Start()
     {
