@@ -9,16 +9,16 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     public static string keyWord;
 
-  /*  public void Start()
-    {
-        string url = "https://bit.ly/3LxxMrM";
-        StartCoroutine(GetRequest(url));
-    }*/
+    /*  public void Start()
+      {
+          string url = "https://bit.ly/3LxxMrM";
+          StartCoroutine(GetRequest(url));
+      }*/
 
     public void Quit()
     {
         Application.Quit();
-        
+
     }
     public void GoNextScene(string sceneName)
     {
@@ -29,9 +29,10 @@ public class SceneController : MonoBehaviour
         keyWord = keyWordName;
         Debug.Log(keyWord);
         //string url = "https://bit.ly/3LxxMrM";
-        StartCoroutine(GetRequest());
+        // StartCoroutine(GetRequest());
 
     }
+}
    
 
 // UnityWebRequest.Get example
@@ -41,7 +42,7 @@ public class SceneController : MonoBehaviour
 
 
 
-    IEnumerator GetRequest()
+  /*  IEnumerator GetRequest()
     {
         string uri = "https://bit.ly/3LxxMrM";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
@@ -69,6 +70,6 @@ public class SceneController : MonoBehaviour
             }
         }
     }
-}
+}*/
 
 
